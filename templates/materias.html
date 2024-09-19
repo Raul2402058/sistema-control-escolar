@@ -1,0 +1,22 @@
+<h1>Materias</h1>
+<a href="/">Inicio</a>
+<table>
+    <thead>
+        <tr>
+            <th>N° Materia</th>
+            <th>Nombre de la materia</th>
+            <th>Horario</th>
+            <th>Profesor</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for materia in dato %}
+        <tr>
+            <td>{{materia["ID"]}}</td>
+            <td>{{materia["Nombre de la materia"]}}</td>
+            <td>{{materia["Horario"]}}</td>
+            <td>{{materia["Profesor"]}}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
